@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/apbackground"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+
+        <TextView
+            android:id="@+id/textGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="18dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Injecto"
+            android:textColor="#04262B"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signin"
+            android:layout_width="75dp"
+            android:layout_height="25dp"
+            android:textSize="15sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="333dp"
+            android:layout_marginLeft="333dp"
+            android:layout_marginBottom="7dp"
+            android:textColor="@color/black"
+            android:text="Sign In"
+            android:textStyle="bold" />
+        <!--        <androidx.drawerlayout.widget.DrawerLayout-->
+        <!--            android:id="@+id/drawerLayout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+        <!--            <com.google.android.material.navigation.NavigationView-->
+        <!--                android:id="@+id/navView"-->
+        <!--                android:layout_width ="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                app:headerLayout="@layout/nav_header"-->
+        <!--                app:menu="@menu/nav_drawer_menu"-->
+        <!--                android:layout_gravity="right"-->
+        <!--                android:fitsSystemWindows="true"/>-->
+
+        <!--        </androidx.drawerlayout.widget.DrawerLayout>-->
+
+
+    </RelativeLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:columnCount="2"
+        android:padding="14dp"
+        android:rowCount="2">
+
+        <!--Row 1-->
+        <!--Column1-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/myprofile"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            tools:ignore="UnusedAttribute"
+            android:backgroundTint="#0000">
+            <LinearLayout
+
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/profile"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="My Profile"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!--Column2-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/calender"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="#0000"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/schedule" />
+
+                <TextView
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="My Schedule"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--Row 1-->
+        <!--Column1-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/vaccines"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="#0000"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_row="0"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/vaccine" />
+
+                <TextView
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:gravity="center_horizontal"
+                    android:text="My Vaccines"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!--Column2-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/otherservices"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:backgroundTint="#0000"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+
+                android:layout_margin="16dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_row="0"
+                    android:gravity="center_horizontal"
+                    android:src="@drawable/otherservices"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:gravity="center_horizontal"
+                    android:text="Other services"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+    </GridLayout>
+
+</LinearLayout>
+
